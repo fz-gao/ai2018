@@ -13,17 +13,17 @@ import java.util.List;
 @Slf4j
 public class NewsService {
 
-    public static final String url = "jdbc:mysql://xx.xx.xx.xx:3306/news";
-    public static final String name = "com.mysql.cj.jdbc.Driver";
-    public static final String username = "ai2018";
-    public static final String password = "helloworld";
+    public static final String URL = "jdbc:mysql://XX.XX.XX.XX:3306/news";
+    public static final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
+    public static final String USERNAME = "ai2018";
+    public static final String PASSWORD = "helloworld";
 
     public Connection conn = null;
     public PreparedStatement statement = null;
 
     static {
         try {
-            Class.forName(name);
+            Class.forName(DRIVER_NAME);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -31,7 +31,7 @@ public class NewsService {
     public PreparedStatement getStatement(String sql) {
         try {
 
-            conn = DriverManager.getConnection(url, username, password);
+            conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             statement = conn.prepareStatement(sql);
             return statement;
         } catch (Exception e) {

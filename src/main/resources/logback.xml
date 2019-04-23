@@ -6,7 +6,7 @@
     <!--可以从配置文件中读取配置信息，但是无法定时重新加载properties中的内容，建议不要用？  -->
     <!-- <property resource="logback.properties" /> -->
     <substitutionProperty name="PROJECT_NAME" value="web-servlet"/>
-    <substitutionProperty name="LOG_HOME" value="E:\\bak\\log"/>
+    <substitutionProperty name="LOG_HOME" value="D:\\bak\\log"/>
     <timestamp key="byDate" datePattern="yyyyMMdd" />
 
     <!-- 保存所有的日志 文件日志输出 -->

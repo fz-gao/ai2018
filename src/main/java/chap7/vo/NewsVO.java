@@ -13,6 +13,6 @@ public class NewsVO {
     private String newsSource;
     private String detailUrl;
     private LocalDateTime createTime;
-    private byte platform;
+    private Byte platform;
     private LocalDateTime editTime;
 }
